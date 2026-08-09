@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="fan.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Camisas</title>
+</head>
+<body style="background-color:#a1a6aa;">
+	<img src="fan1.png" height="215" width="150" style="display:block; margin:auto;" title="Logo do time">
+	<br>
+		<p align="center" id="subtitulo"><a href="https://interdelimeira.com/" accesskey="I" target="blank">Site Oficial</a> <b>|</b> <a href="index.html">Menu</a> <b>|</b> <a href="torcida.html">Torcidas</a> <b>|</b> Camisas <b>|</b> <a href="cidade.html">Cidade</a></p>
+		<hr>
+		<h1 align="center" id="titulo">Camisetas da Inter de Limeira</h1>
+		<br>
+	<div class="conjunto2">
+		<img src="https://m.media-amazon.com/images/I/41Mj3nYWFQL._AC_SY1000_.jpg" width="200">
+		<img src="https://images.tcdn.com.br/img/img_prod/311840/camisa_alluri_inter_de_limeira_i_2025_149838_1_3a35f48bf3a97ea5abd046842f34b8f2.jpg" width="200">
+		<img src="https://http2.mlstatic.com/D_NQ_NP_956788-MLB96314957374_102025-O.webp" width="200">
+
+	</div>
+		<br>
+		<fieldset>
+		<form>
+			<legend><b>Personalize sua camisa</b></legend>
+			<br><br>
+				<label for="nome">Digite o nome que você deseja colocar em sua camisa:<br></label>
+				<input type="name" name="nome" id="name" minlength="3" maxlength="12">
+
+				<br><br>
+
+				<label for="numero">Digite o numero da sua camisa:</label><br>
+				<input type="number" name="numero" id="numero" min="1" max="99" required>
+
+				<br><br>
+
+				<label for="cor">Selecione a cor da sua camisa:<br></label>
+				<input type="color" name="cor" id="cor">
+
+				<br><br>
+
+				<label for="estampa">Deseja ter patrocínio estampada na sua camisa?<br></label>
+				<input type="radio" name="patrocinio" id="patrocinio">Sim
+				<input type="radio" name="patrocinio" id="patrocinio">Não
+
+				<br><br>
+
+				<label for="acessorios">Outros acessórios (Opcional):<br></label>
+				<select>
+					<option selected>Calção</option>
+					<option>Meião</option>
+					<option>Chuteira</option>
+					<option>Boné</option>
+					<option>Nenhum</option>
+				</select>
+
+				<br><br>
+
+				<label for="msg">Observação (Opcional): </label><br>
+				<textarea id="msg" class="msg" maxlength="550" rows="5" cols="50" placeholder="Digite sua observação de sua camisa"></textarea>
+
+				<br><br>
+				<div style="text-align: center;">
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Limpar">
+					<input type="button" value="Aviso!" onclick="alert('Se você já preencheu o formulário, aguarde o pagamento');">
+				</div>
+			</form>
+		</fieldset>
+</body>
+</html>

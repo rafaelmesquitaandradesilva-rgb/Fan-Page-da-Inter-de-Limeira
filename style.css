@@ -1,0 +1,117 @@
+boby {
+	font-family: Times New Roman, serif;
+	background-color:#a1a6aa
+	margin: auto;
+}
+
+#titulo {
+	color: black;
+	background-color: lightgray;
+	font-size: 30px;
+}
+
+#subtitulo {
+	color: black;
+	box-shadow: 5px 5px 15px gray;
+}
+
+p {
+	max-width: 900px;
+	margin: auto;
+}
+
+a:hover {
+	color: black;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+	transition: 1.0s;
+}
+
+img {
+	transition: 1.0s;
+}
+
+.curiosidade {
+	max-width: 900px;
+	margin: auto;
+}
+
+.temperatura {
+	max-width: 900px;
+	margin: auto;
+}
+
+ul {
+	max-width: 900px;
+	margin: auto;
+}
+
+.conjunto {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.conjunto2 {
+	display: flex;
+	justify-content: center;
+	gap: 0px;
+	flex-wrap: wrap;
+}
+
+.video-wrapper {
+	max-width: 800px;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	margin: 0 auto;
+}
+
+.video-wrapper iframe {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+img {
+	transition: 1,0s;
+	max-width: 100%;
+	height: auto;
+}
+
+.mapa-wrapper { 
+	max-width: 550px;
+	width: 100%;
+	height: 450px;
+}
+
+fieldset {
+	box-sizing: border-box;
+	width: 400px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	justify-content: center;
+	flex-wrap: wrap;
+	border: 1px, solid #ccc;
+	border-radius: 8px;
+	padding: 20px 30px;
+	height: auto;
+
+}
+
+.msg {
+	max-width: 900px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+select, textarea {
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+}
