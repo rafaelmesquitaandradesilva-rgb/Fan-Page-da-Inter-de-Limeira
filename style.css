@@ -13,6 +13,7 @@ boby {
 #subtitulo {
 	color: black;
 	box-shadow: 5px 5px 15px gray;
+	text-align: center;
 }
 
 p {
