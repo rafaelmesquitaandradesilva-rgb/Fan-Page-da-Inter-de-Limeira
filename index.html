@@ -1,235 +1,448 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<link rel="icon" href="fan.png" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="batman3.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Fan Page do Leão</title>
+	<title>Batman</title>
 
 	<style>
 
+		body {
+			font-family: Arial, sans-serif;
+			background-color: black;
+			background-image: url(batman1.jpg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+			background-size: cover;
+			max-width: 100%;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
 		h1 {
-			color: black;
+			background-color: #111111;
+			color: #f1c40f;
 			text-align: center;
-			font-size: 35px;
-			font-family: Calibri, Arial, sans-serif;
-		}
-
-		p {
-			text-align: justify;
-			font-size: 15px;
-			font-family: Rockwell, sans-serif;
-		}
-
-		tr {
-			background-color: white;
-		}
-
-		#extra {
-			text-align: center;
-			font-family: Times New Roman, serif;
+			font-size: 50px;
+			font-family: Arial, sans-serif;
+			letter-spacing: 15px;
+			text-shadow: 4px 4px 5px #000000,
+						5px 5px 8px #f39c12;
+			border-bottom: 3px solid #f39c12;
 		}
 
 		h2 {
-			color: blue;
+			color: ghostwhite;
+			font-family: Times New Roman, sans-serif;
+			font-size: 37px;
 			text-align: center;
-			font-size: 23px;
-			font-family: Calibri, Arial, sans-serif;
+			text-shadow: 4px 4px 5px #000000,
+						5px 5px 8px #f39c12;
 		}
 
-		#return {
-			font-family: Times New Roman, serif;
+		h3 {
+			display: block;
+			text-align: center;
+			max-width: 900px;
+			font-size: 21px;
+			font-family: Oswald, sans-serif;
+			margin: 0 auto;
+		}
+
+		.sub_titulo {
+			color: #000000;
+    		background-color: #f39c12;
+			display: inline-block;
+		}
+
+		.container_titulo {
+			text-align: center;
+		}
+
+		p {
+			max-width: 800px;
+			margin: auto;
+			text-align: justify;
+			text-indent: 50px;
+			line-height: 35px;
+			font-family: Arial, sans-serif;
 			font-size: 20px;
+			color: #DADADA;
+
 		}
 
-		li {
-			font-family: Calibri, Arial, sans-serif;
+		hr {
+			width: 60%;
+			height: 3px;
+			border: none;
+			background-color: #f39c12;
 		}
 
-		td, th {
-			font-family: Calibri, Arial, sans-serif;
+		ul {
+			max-width: 900px;
+			margin: auto;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+			text-align: justify;
+			color: #DADADA;
 		}
 
-		input[type=button] {
-			color: black;
-			background-color: gray;
-			padding: 10px;
-			border-radius: 10px;
-			box-shadow: 1px 1px 3px black;
+		.borda_text {
+			border-style: solid;
+			border-width: 6px;
+			border-radius: 35px;
+			border-color: #f39c12;
+			width: fit-content;
+			display: block;
+			margin: 20px auto;
+			padding: 20px;
+			box-sizing: border-box;
+
+			background-color: rgba(18, 18, 24, 0.8);
+			background-image: url(batman1.webp);
+			background-repeat: repeat;
+			background-position: center center;
+			box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.8);
 		}
 
-		input[type=button]:hover {
-			color: floralwhite;
+		#menu {
+			width: fit-content;
+			max-width: 990px;
+			color: white;
+			font-family: Rockwell, serif;
+			font-size: 12px;
+			text-align: center;
 			background-color: black;
-			padding: 10px;
-			border-radius: 10px;
-			box-shadow: 1px 1px 3px gray;
+			box-shadow: 5px 10px 30px;
+			display: block;
+			margin: 0 auto;
+			padding: 6px 12px;
+		}
+
+		#menu a {
+    		color: #f39c12;
+    		text-decoration: none;
+		}
+
+		#menu a:hover {
+    		color: #f1c40f;
+		}
+
+		a {
+			color: #f39c12;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: white;
+		}
+
+		img {
+			display: block;
+			margin: auto;
+			width: 700px;
+			height: 400px;
+			box-sizing: border-box;
+		}
+
+		@media (min-width: 769px) {
+  		img {
+    		width: 700px;
+    		height: 400px;
+  		}
+	}
+
+		@media (max-width: 768px) {
+  		img {
+    		width: 90%;
+    		height: auto;
+    		max-width: 700px;
+  		}
+	}
+
+		#link_return {
+			text-align: center;
+		}
+
+		#link_return {
+			color: #f39c12;
+    		text-decoration: none;
+		}
+
+		#link_return:hover {
+			color: #f1c40f;
+		}
+
+		#logo {
+			width: 200px;
+			height: auto;
+
+			animation-name: rodar;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-direction: normal;
+		}
+
+		@keyframes rodar {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		#ancora {
+			font-size: 35px;
 		}
 
 	</style>
 
 </head>
-<body style="background-color:#a1a6aa;" id="Início">
-	<img src="fan1.png" height="215" width="150" style="display:block; margin:auto;" title="Logo do time" id="animacao">
-	<br>
-		<p align="center" id="subtitulo"><a href="https://interdelimeira.com/" accesskey="I" target="blank">Site Oficial</a> <b>|</b> Menu <b>|</b> <a href="torcida.html">Torcidas</a> <b>|</b> <a href="camisas.html">Camisas</a> <b>|</b> <a href="cidade.html">Cidade</a></p>
+<body id="Início">
 
-		<hr>
+	<h1 align="center">Conheça o Batman</h1>
 
-			<h1 align="center" id="titulo">Fan Page da Inter de Limeira</h1>
-				<p align="justify">
-					Seja bem vindo(a) ao site de Fãs clubes da <a href="https://www.google.com/search?sca_esv=fbf2635dd64e7c8e&sxsrf=APpeQnuxo1anUjAlL1Wd07HSVUVs__U-ZQ:1785240335328&q=inter+de+limeira&si=APenkKm8lxXlpP1RxqXjUdZuWs_yEaoFvjoGhKRTbc39mcG0IMvHB4rJGgyyoRE3_gpmaO3bTQ-IBEivvXeIjHFKwmMdGXMTaejBCO-IzXHHkr4FGSxP2oGIuGV-xEY0N8mfbJcIMkbXe4HxOBynE2snJjCSpunhPMsx29O0ySkfRRbJqthgcpzfKQI2q1uEta7DWLg7LrSQ&sa=X&ved=2ahUKEwjdvenBqvWVAxU6lZUCHYXQCd0QyNoBKAB6BAgXEAA&ictx=1&biw=1366&bih=633&dpr=1", target="blank">Associação Atlética Internacional de Limeira</a>, mais conhecida como <b>Inter de Limeira</b>, é um clube de futebol brasileiro localzado no Estado de São Paulo. Aqui você verá diversos assuntos e temas envolvendo a equipe do intrior paulista.
-				</p>
+	<img src="batman_logo.webp" title="Logo do batman" id="logo">
 
-				<br>
+	<br><br>
 
-				<p id="extra"><small>Aoerte <mark>Alt + I</mark> para uma surpresa!</small>
+	<div id="menu">
+		<a href="#Bruce">Bruce Wayne</a> <b>|</b>
+		<a href="#Origem">Origem</a> <b>|</b>
+		<a href="#Dead">Morte dos pais</a> <b>|</b>
+		<a href="#Treino">Treinamento</a> <b>|</b>
+		<a href="#Cod">Código de não matar</a> <b>|</b>
+		<a href="#Personaly">Características</a>
+	</div>
 
-			<hr>
+	<p class="borda_text">
+		Batman é um super-herói que aparece nas histórias em quadrinhos americanas publicadas pela <a href="https://www.dc.com/", target="blank">DC Comics</a>. Batman foi criado pelo escritor <a href="https://www.google.com/search?q=bill+finger&sca_esv=92a80f919d9b6710&rlz=1C1CHZN_enBR1128BR1128&sxsrf=APpeQnu6USxTih8c4-HpmdaxfjFKD7Txsg%3A1789241874222&ei=EqqlaoCPDYC75OUPwfas4A4&biw=1366&bih=633&gs_ssp=eJzj4tTP1TcwNCw3MjBg9OJOyszJUUjLzEtPLQIATm0HDg&oq=Bill+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBUJpbGwgKgoIABiABBiKBRhDMgoQLhiABBiKBRhDMgoQLhiABBiKBRhDMgoQLhiABBiKBRhDMgoQABiABBiKBRhDMg0QLhiABBiKBRhDGLEDMggQLhiABBixAzINEC4YgAQYigUYQxixAzINEC4YgAQYigUYQxixAzIIEC4YgAQYsQMyDRAuGIAEGIoFGEMYsQMyGRAuGIAEGIoFGEMYlwUY3AQY3gQY3wTYAQFI0xVQ4QdY9A1wAXgBkAEAmAF4oAHEBKoBAzAuNbgBA8gBAPgBAZgCBqAClQWoAhLCAgcQIxjqAhgnwgIHEC4Y6gIYJ8ICDRAjGMkCGPAFGOoCGCfCAg0QIxjwBRjJAhjqAhgnwgIKECMY8AUY6gIYJ8ICDRAuGMcBGNEDGOoCGCfCAhYQABiABBiKBRhDGOcGGOoCGLQC2AEBwgIfEC4YgAQYigUYQxjnBhjHARjRAxjIAxjqAhi0AtgBAcICGRAuGIAEGIoFGEMY5wYYyAMY6gIYtALYAQHCAgcQIxjwBRgnwgIKECMYyQIY8AUYJ8ICChAjGPAFGMkCGCfCAgoQLhhDGIAEGIoFwgILEC4YgAQYsQMYgwHCAgUQLhiABMICBBAjGCfCAhAQABiABBiKBRhDGLEDGIMBwgIOEAAYgAQYigUYjQYYsQPCAggQABiABBixA8ICDhAuGIAEGIoFGI0GGLEDmAMd8QVIzuuJrwWZGLoGBggBEAEYAZIHAzEuNaAHpb4BsgcDMC41uAf4BMIHBzItMi4zLjHIB0OACAE&sclient=gws-wiz-serp", target="blank">Bill Finger</a> e pelo desenhista <a href="https://www.google.com/search?q=bob+kane&sca_esv=92a80f919d9b6710&rlz=1C1CHZN_enBR1128BR1128&biw=1366&bih=633&sxsrf=APpeQnv5FL9Zpda9SmcRrkDRkb18WkHV0Q%3A1789241916444&ei=PKqlaordGuu35OUPj-qYqQQ&gs_ssp=eJzj4tTP1TcwyqtMzzZg9OJIyk9SyE7MSwUAQ-UGbw&oq=Bob+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBEJvYiAqCggAGIAEGIoFGEMyChAuGIAEGIoFGEMyChAAGIAEGIoFGEMyCBAuGIAEGLEDMgoQABiABBiKBRhDMggQLhiABBixAzIFEAAYgAQyBRAAGIAEMggQABiABBixAzIFEC4YgAQyDhAAGIAEGIoFGLEDGIMBMhkQLhiABBiKBRhDGJcFGNwEGN4EGN8E2AEBSJ8YUIMIWMkNcAF4AZABAJgBbqABrAOqAQMwLjS4AQPIAQD4AQGYAgWgAt4DqAISwgIHECMY6gIYJ8ICBxAuGOoCGCfCAg0QIxjJAhjwBRjqAhgnwgINECMY8AUYyQIY6gIYJ8ICChAjGPAFGOoCGCfCAg0QLhjHARjRAxjqAhgnwgIZEC4YgAQYigUYQxjnBhjIAxjqAhi0AtgBAcICBBAuGCfCAgcQIxjwBRgnwgIKECMY8AUYyQIYJ8ICChAjGMkCGPAFGCfCAgoQLhhDGIAEGIoFwgIREC4YlwUY3AQY3gQY3wTYAQHCAgQQIxgnwgILEAAYgAQYsQMYgwHCAgsQABiABBiKBRixA8ICERAAGIAEGIoFGI0GGLEDGIMBmAMM8QVmV1BcdM2EvLoGBggBEAEYCJIHAzEuNKAH5k-yBwMwLjS4B9EDwgcFMi0yLjPIBymACAE&sclient=gws-wiz-serp", target="blank">Bob Kane</a>, estreando no 27.º número da revista <i><u>Detective Comics</u></i>, em 30 de março de 1939.
+	</p>
+
+	<hr>
+
+	<h2 align="center">Cidade de Gotham</h2>
+
+	<div class="borda_text">
+		<p>
+			<b>Gotham City</b> é uma cidade fictícia criada para as histórias em quadrinhos, filmes e animações do <b>Cavaleiro das Trevas</b> geralmente contra seus vilões. Ela representa um cenário <i>caótico</i>, <i>perigoso</i>, <i>assutador</i>, <i>escuro</i>, <i>abandonado</i> e <i>barulhento</i> dominado pelo crime, marginalização e corrupção, onde o Batman é tratado como a última esperança da cidade.
+		</p>
+
+		<br>
+
+		<ul>
+			<li><b>Origem</b>: o roteirista Bill Finger folheou um <strong>catálogo telefônico de Nova York</strong>, viu a listagem <i>"Gotham Jewelers"</i> e escolheu o nome. "Gotham" já era um antigo apelido satírico de Nova York, popularizado por Washington Irving no século XIX, e remonta à lenda medieval da vila inglesa de Gotham <i>("vila dos loucos")</i>.</li>
 
 			<br>
 
-		<h1 align="center">Últimos jogos!</h1>
+			<li><b>Localização</b>: nos quadrinhos, fica no estado de <b>Nova Jersey</b>, de frente para Metrópolis (em Delaware) através da Baía de Delaware.</li>
 
-		<h2 align="center" style="color: blue;">Mesmo com a derrota, Inter de Limeira sube para a série B do campeonato brasileiro</h2>
-		<h3 align="center">Veja os melhores momentos</h3>
+			<br>
 
-		<div class="video-wrapper">
-			<iframe src="https://www.youtube.com/embed/-zYWSlB6aUI"
-			title="Vídeo do jogo"
-			width="800"
-			height="400"
-			allowfullscreen>
-			</iframe>
-		</div>
+			<li><b>História ficcional</b>: segundo um conto de <i><a href="https://www.google.com/search?gs_ssp=eJzjYtfP1TeorMgxYPTiSsxJzFPIzc8vSgUARhYGzQ&q=alan+moore&rlz=1C1CHZN_enBR1128BR1128&oq=Alan+Moore&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyDwgAEEUYORjjAhixAxiABDIKCAEQLhixAxiABDIHCAIQLhiABDIHCAMQLhiABDIHCAQQLhiABDIKCAUQABiABBi0BzIKCAYQABiABBi0BzIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTcwMzhqMGoxNagCCLACAfEFqQocnJbdw7A&sourceid=chrome&ie=UTF-8", target="blank">Alan Moore</i></a>, foi fundada por um mercenário norueguês e depois assumida pelos ingleses, ecoando a fundação de Nova York pelos holandeses.</li>
 
-		<br><br>
+			<br>
 
-		<h2 align="center" style="color: blue;">Leão empata com o Brusque em 2 a 2 no Limeirão e decide acesso a série B na última rodada dos Play-off</h2>
-		<h3 align="center">Veja os melhores momentos</h3>
-
-		<div class="video-wrapper">
-			<iframe src="https://www.youtube.com/embed/qGItfU6EpWA"
-			title="Vídeo do jogo"
-			width="800"
-			height="400"
-			allowfullsreen></iframe>
-
-		<br><br>
-
-		<h2 align="center" style="color: blue;">Inter de Limiera garante a sua primeira vitória na fase de grupos da série C</h2>
-		<h3 align="center">Veja os melhores momentos</h3>
-
-		<div class="video-wrapper">
-			<iframe src="https://www.youtube.com/embed/JBAbEus0v_0"
-			title="Vídeo do jogo"
-			width="800"
-			height="400"
-			allowfullscreen 
-			></iframe>
-		</div>
-
-		<br><br>
-
-		<h2 align="center" style="color: blue;">Inter de Limeira empata novamente na 3° fase dos Play-off contra o Paysandu fora de case</h2>
-		<h3 align="center">Veja os melhores momentos</h3>
-
-		<div class="video-wrapper">
-			<iframe src="https://www.youtube.com/embed/DmWrn-VA0e8"
-			title="Vídeo do jogo"
-			width="800"
-			height="400"
-			allowfullsreen 
-			></iframe>
-
-		<br><br>
-	
-		<hr>
-
-		<h2 align="center">Tabela de Títulos</h2>
-
-		<br>
-
-		<table border="5px" align="center" width="65%" bgcolor="#1a1f1e">
-			<tr>
-				<th colspan="2" align="center">Títulos oficiais conquistados pela Inter de Limeira</th>
-			</tr>
-
-			<tr>
-				<th align="center">Torneio</th>
-				<th align="center">Ano</th>
-			</tr>
-
-			<tr>
-				<td align="center">Campeonato paulista - Série A3</td>
-				<td align="center">1966</td>
-
-			<tr>
-				<td align="center">Campeonato paulista - Série A2</td>
-				<td align="center">1978</td>
-			</tr>
-
-			<tr>
-				<td align="center">Campeonato paulista - Série A1</td>
-				<td align="center">1986</td>
-			</tr>
-
-			<tr>
-				<td align="center">Campeonato brasileiro - Série B</td>
-				<td align="center">1988</td>
-			</tr>
-
-			<tr>
-				<td align="center">Campeonato paulista - Série A2</td>
-				<td align="center">1996</td>
-			</tr>
-
-			<tr>
-				<td align="center">Campeonato paulista - Série A2</td>
-				<td align="center">2004</td>
-			</tr>
-		</table>
-
-		<br><br>
-
-		<hr>
-
-		<h2 align="center">Campanha da equipe no ano de 2026</h2>
-
-		<ul>
-			<li><b>Campeonato Paulista Série A2</b>: A equipe teve uma campanha de altos e baixos no Estadual, terminando a fase de classificação na <mark>12ª colocação com 16 pontos em 15 jogos</mark>, o que gerou frustração inicial no planejamento da temporada.</li>
-
-			<br><br>
-
-			<li><b>Brasileirão Série C</b>: O Leão da Paulista se reergueu de forma impressionante após a <mark>reformulação do elenco</mark> e a chegada do técnico <i><u>Matheus Costa</u></i>. A equipe fez uma campanha muito forte, destacando-se como uma das <mark>melhores visitantes da competição e assumindo a liderança em diversos momentos</mark>, e garantiu a classificação para os play-off do campeonato.</li>
-
-			<br><br>
-
-			<li><b>Quadrangular Decisivo (Grupo C)</b>: Decidiu a vaga ponto a ponto com <i><u>Ferroviária</u></i>, <i><u>Brusque</u></i> e <i><u>Paysandu</u></i>.</li>
-
-			<br><br>
-
-			<li><b>Desfecho do Acesso</b>: Na última rodada, em 11 de outubro de 2026, a Inter perdeu por 2 a 0 para a Ferroviária em Araraquara. No entanto, a equipe conquistou a vaga e o <mark>vice-liderança do grupo</mark> graças ao saldo de gols (11 a 10 sobre o Brusque), assegurando o retorno à Série B do Brasileirão após 35 anos de espera (última participação em 1991).</li>
-
-			<br><br>
-
-			<li><b>Fora de campo</b>: Em outubro de 2026, foi sacramentada a <mark>venda de 80% da SAF da Inter de Limeira</mark> para um grupo de investidores liderado pelo ex-jogador <i><u>Ronaldo Fenômeno</i></u>, <i><u>Roberto Carlos</i></u> e o <i><u>príncipe saudita Abdullah bin Saad bin Abdulaziz Al Saud</i></u>, consolidando um novo capítulo administrativo para o clube.</li>
+			<li><b>Aspecto</b>: por causa dos hábitos noturnos do Batman, as aventuras se passam quase sempre à noite, com arquitetura gótica, bairros como a Ilha de Gotham, o <a href="https://www.google.com/search?q=Arkham+Asylum&sca_esv=78dc29a521eda43e&rlz=1C1CHZN_enBR1128BR1128&sxsrf=APpeQntUoVGTc0Mj8OCAxDi5-E4FR41d1w%3A1789260908754&ei=bPSlatPWLcSr1sQPioLF2Q8&biw=1366&bih=633&ved=2ahUKEwjTvIGnrOqWAxXElZUCHQpBMfsQ4dUDegQIBhAM&uact=5&oq=Arkham+Asylum&gs_lp=Egxnd3Mtd2l6LXNlcnAiDUFya2hhbSBBc3lsdW0yDRAuGEMYgAQYigUYtAcyCBAuGLEDGIAEMgUQABiABDIKEAAYgAQYigUYQzIFEAAYgAQyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIcEC4YQxiABBiKBRi0BxiXBRjcBBjeBBjgBNgBAUiVDFD4BFj4BHABeAGQAQCYAZABoAGQAaoBAzAuMbgBA8gBAPgBAfgBApgCAqAC0wGoAhHCAgcQIxjqAhgnwgINECMY8AUYyQIY6gIYJ8ICBxAuGOoCGCfCAg0QLhjHARjRAxjqAhgnwgIZEC4YgAQYigUYQxjnBhjIAxjqAhi0AtgBAZgDJfEFmT7r7raHfiC6BgYIARABGAiSBwMxLjGgB78MsgcDMC4xuAetAcIHAzQtMsgHM4AIAQ&sclient=gws-wiz-serp", target="blank"><b>Arkham Asylum</a></b> e a <b><a href="https://www.google.com/search?sca_esv=78dc29a521eda43e&rlz=1C1CHZN_enBR1128BR1128&sxsrf=APpeQnsxOUkIDVYSGYMH0ElbpwPTR4Qd9Q:1789261025622&q=Wayne+Empresas&sa=X&ved=2ahUKEwigut7erOqWAxULA7kGHUckDDgQ7xYoAHoECA4QAQ&biw=1366&bih=633&dpr=1", target="blank">Wayne Enterprises</a></b>.</li>
 		</ul>
+	</div>
+
+	<br>
+
+	<h2 align="center" id="Bruce">Bruce Wayne: O homem por trás do Batman</h2>
+
+	<p class="borda_text">
+		É a identidade pública do Batman repesentado como um <b>bilhonário</b> <b>americano</b>, <b>magnata dos negócios</b>, <b>filantropo</b> e <b>dono das Empresas Wayne</b>.
+
+		Enquanto o mundo o enxerga como um <b>playboy irresponsável</b> e <b>festeiro</b>, essa fachada serve para proteger suas atividades noturnas como o Cavaleiro das Trevas.
+
+		Bruce não possui superpoderes. Em vez disso, alcançou o ápice do condicionamento <b>físico</b> e <b>mental humano</b> através de anos de treino rigoroso em <strong>artes marciais</strong>, <strong>ciência</strong>, <strong>tática</strong> e <strong>investigação</strong>.
+
+		Seu leal mordomo <a href="https://www.google.com/search?q=alfred+batman&sca_esv=1156825944b621ea&rlz=1C1CHZN_enBR1128BR1128&sxsrf=APpeQnv00u3cKfhBeg-LB_f3ioxIzoItnA%3A1789330357479&ei=tQOnaoKPF8Gi1sQPsJatKQ&biw=1366&bih=633&gs_ssp=eJzj4tTP1TcwKjI0sjRg9OJNzEkrSk1RSEosyU3MAwBeoAfY&oq=Alfr&gs_lp=Egxnd3Mtd2l6LXNlcnAiBEFsZnIqDQgAGEMYsQMYgAQYigUyDRAuGEMYsQMYgAQYigUyDRAAGIAEGIoFGEMYsQMyBRAuGIAEMggQLhiABBixAzIIEC4YgAQYsQMyCBAuGIAEGLEDMggQLhiABBixAzIIEC4YgAQYsQMyCBAAGIAEGLQHMggQLhiABBixAzIcEC4YQxixAxiABBiKBRiXBRjcBBjeBBjgBNgBAUjyOlC4BViONXAHeAGQAQCYAYkBoAGWBqoBAzAuNrgBA8gBAPgBAZgCDqAC4g2oAhLCAgcQIxjqAhgnwgIQECMY8AUYngYYogcY6gIYJ8ICBxAuGOoCGCfCAg0QLhjHARjRAxjqAhgnwgIZEC4YgAQYigUYQxjnBhjIAxjqAhi0AtgBAcICBBAjGCfCAg0QIxjwBRieBhiiBxgnwgIKEC4YQxiABBiKBcICChAAGIAEGIoFGEPCAgoQIxjJAhjwBRgnwgIEEC4YJ8ICEBAuGIAEGIoFGEMYsQMYgwHCAgoQLhiABBiKBRhDwgIIEAAYgAQYsQPCAhMQLhiABBiKBRhDGLEDGMcBGNEDwgIZEC4YQxiABBiKBRiXBRjcBBjeBBjgBNgBAcICBxAuGIAEGArCAgsQLhiABBjHARivAcICBRAAGIAEwgIHEAAYgAQYCsICDBAAGIAEGAoYCxixA8ICFhAuGIAEGAoYlwUY3AQY3gQY4ATYAQHCAggQLhixAxiABMICCxAuGK8BGMcBGIAEwgIXEC4YsQMYgAQYlwUY3AQY3gQY4ATYAQGYAyrxBZLzrjPMqrpyugYGCAEQARgIkgcHNy42LjUtMaAHppIBsgcDMC42uAeVB8IHBzItMS45LjTIB-0BgAgB&sclient=gws-wiz-serp", target="blank">Alfred Pennyworth</a> (que o criou após a morte dos pais), o <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwNiwzMjBg9BJKzs_NLC4-vLAoM18hPb8oJT8PAJaXCr0&q=comiss%C3%A1rio+gordon&rlz=1C1CHZN_enBR1128BR1128&oq=Comis&gs_lcrp=EgZjaHJvbWUqDAgBEC4YQxiABBiKBTIGCAAQRRg5MgwIARAuGEMYgAQYigUyCggCEAAYsQMYgAQyDwgDEAAYChixAxiABBiKBTIMCAQQABhDGIAEGIoFMgcIBRAAGIAEMgoIBhAAGLEDGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGI8C0gEJMzkzMmowajE1qAIIsAIB8QUizilyhZ0y3Q&sourceid=chrome&ie=UTF-8", target="blank">Comissário James Gordon</a> e seus parceiros de combate ao crime, como o <a href="https://www.google.com/search?q=Robin&sca_esv=1156825944b621ea&rlz=1C1CHZN_enBR1128BR1128&biw=1366&bih=633&sxsrf=APpeQnuwyLcMNOe5AGqjDPUE_kx6GIuHjA%3A1789330385085&ei=0QOnat_eBPbe1sQPtICpgQk&ved=2ahUKEwifi_SPr-yWAxV2r5UCHTRAKpAQ4dUDegQIBhAM&uact=5&oq=Robin&gs_lp=Egxnd3Mtd2l6LXNlcnAiBVJvYmluMgQQIxgnMgoQLhhDGIAEGIoFMgoQABiABBiKBRhDMgoQLhiABBiKBRhDMggQLhiABBixAzIKEC4YgAQYigUYQzIIEC4YsQMYgAQyCBAuGIAEGLEDMgsQLhiABBixAxiDATILEC4YgAQYsQMYgwFIxRFQ1QVYvg1wAXgBkAEAmAGNAaABmgWqAQMwLjW4AQPIAQD4AQGYAgagAowGqAISwgIHECMY6gIYJ8ICBxAuGOoCGCfCAhAQIxiiBxieBhjwBRjqAhgnwgINEC4YxwEY0QMY6gIYJ8ICChAjGPAFGOoCGCfCAhkQLhiABBiKBRhDGOcGGMgDGOoCGLQC2AEBwgIHECMY8AUYJ8ICCBAAGIAEGLEDwgINEC4YgAQYigUYQxixA5gDH_EFesL5rTnIfYC6BgYIARABGAiSBwMxLjWgB-yiAbIHAzAuNbgH7AXCBwUzLTUuMcgHXoAIAQ&sclient=gws-wiz-serp", target="blank">Robin</a> são seus principais aliados.
 
 		<br><br>
 
-		<img src="Tabela.png" title="Classicação da primeira fase da Série C do campeonato brasileiro de 2026" width="500" height="300" style="display: block; margin: auto; width: 100%; max-width: 500px; height: auto; border: 4px solid; box-sizing: border-box;">
+		<a href="#Início"><span id="ancora"><strong>🦇</strong></span></a>
+	</p>
+
+	<img src="bruce.jpeg" border="2px" title="Imagem do Bruce Wayne em HQ">
+
+	<br>
+	<hr>
+
+	<h2 align="center" id="Origem">Origem</h2>
+
+	<p class="borda_text">
+		Bruce Wayne era um garoto rico de 8 anos em Gotham City. Ele viu seus pais, <b>Thomas e Martha Wayne</b>, serem assassinados a tiros por um criminoso (mais tarde identificado como Joe Chill) após saírem de um cinema. Depois do ocorrido, Bruce jurou <b>vingar</b> a família e <strong>declarar guerra</strong> contra todo o crime de Gotham, ele passou  anos viajando pelo mundo, estudando <b>ciências</b>, <b>criminologia</b>, <b>artes marciais</b> e <b>técnicas de infiltração</b>. Ao retornar a Gotham, Bruce precisava de um símbolo que amedrontasse os criminosos, ele se inspirou em um <strong>morcego</strong> que voou pela janela de sua Mansão. Ao contrário de outros heróis, Batman não tem superpoderes, ele usa sua <b>inteligência brilhante</b>, <b>preparo físico máximo</b>, <b>artes marciais</b> e <b>tecnologia de ponta</b>.
 
 		<br><br>
 
-		<input type="button" id="button" value="Aviso!" onclick="alert('Esse site é desenvolvido por um estudante de programação apenas para teste, sem vínculo oficial com a A.A. Internacional de Limeira e sem fins lucrativos!')" style="display:block; margin:auto;">
+		<a href="#Início"><span id="ancora"><strong>🦇</strong></span></a>
+	</p>
+
+	<br><hr>
+
+	<h2 align="center" id="Dead">Morte dos pais</h2>
+
+	<div class="borda_text">
+		<p>
+			Os pais do Batman, <strong>Thomas e Martha Wayne</strong>, foram mortos a tiros por um assaltante chamado <b>Joe Chill</b> em um beco escuro de Gotham City.
+
+			<br><br>	
+
+			<div class="container_titulo">
+				<h3 style="color: #DADADA;" class="sub_titulo">Como aconteceu:</h3>
+			</div>
+
+			<br><br>
+
+			<ul>
+				<li>A família voltava de uma sessão de cinema ou teatro.</li>
+
+				<br>
+
+				<li>Eles decidiram cortar caminho por um beco.</li>
+
+				<br>
+
+				<li>Um criminoso armado abordou o casal para roubar o colar de pérolas de Martha.</li>
+
+				<br>
+
+				<li>Thomas tentou proteger a esposa, fez um movimento brusco e foi baleado. O ladrão também atirou em Martha em seguida.</li>
+
+				<br>
+
+				<li> O pequeno Bruce Wayne presenciou tudo, ficando órfão e sob os cuidados do mordomo Alfred.</li>
+			</ul>
+
+		<br><br>
+
+			<a href="#Início"><span id="ancora"><strong>🦇</strong></span></a>
+		</p>
+	</div>
+
+	<br>
+
+	<img src="morte.jpeg" border="2px"; title="Imagem da morte dos pais de Bruce Wayne em HQ">
+
+	<br><hr>
+
+	<h2 align="center" id="Treino">Treinamento</h2>
+
+	<div class="borda_text">
+		<p>
+			O treino do Batman combina força máxima, resistência física e artes marciais para alcançar o condicionamento físico perfeito.
+
+			<br><br>
+
+			<div class="container_titulo">
+				<h3 style="color: #DADADA;" class="sub_titulo">Como funciona a rotina:</h3>
+			</div>
+
+			<br><br>
+
+			<ul>
+				<li><b>Força e Hipertrofia</b>: Treinos intensos de levantamento de peso e calistenia para ganho de massa funcional.</li>
+
+				<br>
+
+				<li><b>Combate e Agilidade</b>: Sessões dedicadas a artes marciais, flexibilidade e parkour.</li>
+
+				<br>
+
+				<li><b>Resistência</b>: Circuitos de alta intensidade (HIIT), corrida e exercícios aeróbicos.</li>
+
+				<br>
+
+				<li><b>Mente</b>: Meditação diária para foco e controle emocional</li>
+			</ul>
+
+		<br><br>
+
+			<a href="#Início"><span id="ancora"><strong>🦇</strong></span></a>
+		</p>
+	</div>
+
+	<img src="treino.jpeg" border="2px" title="Imagem do Bruce Wayne treinando com Ra's al Ghul">
+
+	<br><hr>
+
+	<h2 align="center" id="Cod">Código de não matar</h2>
+
+	<p class="borda_text">
+		<b>O código de não matar do Batman</b> é a regra moral em que Bruce Wayne se recusa a tirar a vida de qualquer pessoa, incluindo seus <strong>piores inimigos</strong>, pois ele jurou nunca tirar uma vida para que outras pessoas não passem pela <strong>mesma <b>dor</b></strong> que ele sentiu quando viu seus pais morrerem. Além disso, Bruce acredita que, se cruzar a linha e matar um criminoso, ele se tornará tão <b>perverso</b> quanto aqueles que combate. Isso também é influenciado pelo fato de que seu pai, <b>Thomas Wayne</b> era médico, onde ele via a <mark>vida como algo sagrado</mark>.
+
+		<br><br>
+
+		<a href="#Início"><span id="ancora"><strong>🦇</strong></span></a>
+	</p>
+
+	<hr><br>
+
+	<h2 align="center" id="Personaly">Características do herói</h2>
+
+	<div class="borda_text">
+		<p>
+			O Batman é um dos heróis mais famosos da <b>DC Comics</b>, conhecido por usar o <b>medo</b> como <b>arma</b> e combater o crime em Gotham City.
+
+			<br><br>
+
+			<div class="container_titulo">
+				<h3 style="color: #DADADA" class="sub_titulo">Principais atributos:</h3>
+			</div>
+
+			<br><br>
+
+			<ul>
+				<li><b>Ausência de superpoderes</b>: Ele não tem poderes sobre-humanos; sua força vem de um condicionamento físico e mental levado ao limite humano.</li>
+
+				<br>
+
+				<li><b>Treinamento extremo</b>: É mestre em diversas artes marciais, acrobacias, táticas de infiltração e fuga.</li>
+
+				<br>
+
+				<li><b>O Maior Detetive do Mundo</b>: Possui genialidade em ciências forenses, criminologia, dedução e análise de pistas.</li>
+
+				<br>
+
+				<li><b>Tecnologia e arsenal</b>: Utiliza uma vasta fortuna das Indústrias Wayne para criar trajes blindados, veículos (como o Batmóvel) e ferramentas especializadas em seu cinto de utilidades.</li>
+			</ul>
+
+			<br><br>
+
+			<a href="#Início"><span id="ancora"><strong>🦇</strong></span></a>
+		</p>
+	</div>
+
+	<img src="batmanhero.jpg" border="2px" title="Retratro do Batman">
+
+		<br><hr>
+
+	<h2 align="center">Outras seções:</h2>
+
+	<div id="menu">
+		<a href="viloes.html">Vilões</a> <b>|</b>
+		<a href="aliados.html">Aliados</a> <b>|</b>
+		<a href="games.html">Jogos</a> <b>|</b>
+		<a href="filmes.html">Filmes e séries</a> <b>|</b>
+		<a href="hqs.html">Quadrinhos</a>
+	</div>
+
+	<br><br>
+
+	<hr><br>
+
+		<a href="#Início">
+			<h3 id="link_return">Início</h3>
+		</a>
 
 		<br>
-		
-		<hr>
-
-			<h3 align="center" id="return"><a href="#Início">Início</a></h3>
-
 </body>
 </html>
